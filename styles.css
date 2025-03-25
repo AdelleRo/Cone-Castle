@@ -70,15 +70,19 @@ h3{
 }
 
 
+
 /*General media queries*/
 @media screen and (max-device-width: 1030px){
     header{
         height: 200px;
     }
+
 }
 
 @media screen and (max-device-width: 770px){
-
+    .ptext{
+        font-size: 1.5rem;
+    }
 }
 
 /*Home page*/
@@ -118,30 +122,30 @@ h3{
 
 .productimg:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: scale(1.05) 
+    transform: scale(1.05);
 
 }
 
-.explorebtn{
+.explore{
     display: flex;
     justify-content: center;
     margin: 30px 0 70px 0;
     font-weight: bold;
 }
 
-.explorebtn > a{
-    width: 200px;
+.explorebtn{
+    display: block;
     text-align: center;
     background-color:#a6eeca;
-    border-radius: 10px;
-    padding: 5px 10px;
+    border-radius: 20px;
+    padding: 10px 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: transform .2s;
 }
 
-.explorebtn > a:hover{
+.explore > a:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: scale(1.05) 
+    transform: scale(1.05);
 }
 
 .about{
@@ -171,7 +175,7 @@ h3{
 
 
 /*Media queries for about page*/
-@media screen and (min-device-width: 770px) and (max-device-width: 1300px){
+@media screen and (min-device-width: 771px) and (max-device-width: 1300px){
     .about{
         padding: 90px 100px 30px 100px;
     }
@@ -182,8 +186,11 @@ h3{
 }
 
 @media screen and (max-device-width: 770px){
+    .producthp{
+        margin: 20px 40px;
+    }
     .about{
-        padding: 50px;
+        padding: 70px;
     }
     .abouttext{
         margin: 0;
@@ -191,8 +198,11 @@ h3{
         width: 100%;
         background-color: #fbcace8e;
     }
+    .aboutptext{
+        font-size: 1em;
+    }
     .aboutimg{
-        display: none;    
+        display: none;
     }
     .aboutbg{
         background: url('./images/icecream8nobg.png');
@@ -222,12 +232,11 @@ h3{
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: transform .2s;
-    
 }
 
 .productsp:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: scale(1.05) 
+    transform: scale(1.05);
 }
 
 .icecreamsp{
@@ -255,7 +264,6 @@ h3{
     padding: 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.568);
-
 }
 
 
@@ -273,7 +281,6 @@ h3{
     flex-wrap: wrap;
     padding: 0px 0px 50px 20px;
     justify-content: center;
-    
 }
 
 .productinfo{
@@ -301,7 +308,6 @@ span{
 .product > img{
     border-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
 }
 
 .productinfo > form{
@@ -343,12 +349,10 @@ input[type="radio"]{
     background-color:#a6eeca;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: transform .2s;
-
 }
 
 .addtocart > button:hover{
-    transform: scale(1.05) 
-
+    transform: scale(1.05);
 }
 
 
@@ -375,7 +379,6 @@ legend{
     background-color:#a6eeca;
     border-radius: 7px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
 }
 
 label{
@@ -384,7 +387,6 @@ label{
 
 fieldset > input{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
 }
 
 .formbuttons{
@@ -432,7 +434,6 @@ input{
 .cartproduct{
     display: flex;
     margin: 20px;
-
 }
 
 .cartimg{
