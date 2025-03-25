@@ -1,0 +1,514 @@
+/*general*/
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#3c3c3c;
+}
+
+body{
+    background-color: #fdeec1;
+}
+
+header{
+    background-image: url('./images/icecreamdrip2.1.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav{
+    width: 45%;
+    font-size:larger;
+    font-weight: bold;
+    align-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navopt{
+    color: #ffec99;
+    padding: 3px;
+}
+
+.navopt:hover{
+    background-color:#ffec99;
+    border-radius: 10px;
+    color:#fe6283;
+}
+
+footer{
+    background-color: #fe6283;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.social, .legal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 50px;
+}
+
+.social{
+    margin-left: 130px;
+}
+
+a{
+    color:#3c3c3c;
+
+}
+
+h3{
+    font-family:'Joti One';
+
+}
+
+
+/*General media queries*/
+@media screen and (max-device-width: 1030px){
+    header{
+        height: 200px;
+    }
+}
+
+@media screen and (max-device-width: 770px){
+
+}
+
+/*Home page*/
+.featured{
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featured > h1{
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+    font-family:'Joti One';
+    color:#fe6283;
+    text-shadow: 1px 1px 6px #3c3c3c1d;
+}
+
+.producthp{
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+}
+
+.productimg{
+    height: 150px;
+    display: flex;
+    background-color:#a6eeca;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: transform .2s;
+
+}
+
+.productimg:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.05) 
+
+}
+
+.explorebtn{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 70px 0;
+    font-weight: bold;
+}
+
+.explorebtn > a{
+    width: 200px;
+    text-align: center;
+    background-color:#a6eeca;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: transform .2s;
+}
+
+.explorebtn > a:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.05) 
+}
+
+.about{
+    background-color: #FBCACE;
+    display: flex;
+    justify-content: center;
+
+    padding: 90px 200px 30px 200px;
+    --mask:
+      radial-gradient(79.14px at 50% 110.4px,#000 99%,#0000 101%) calc(50% - 92px) 0/184px 100%,
+      radial-gradient(79.14px at 50% -64.4px,#0000 99%,#000 101%) 50% 46px/184px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+}
+
+.abouttext{
+    width: 90%;
+    margin-left: 80px;
+    padding-top: 50px;
+}
+
+.abouttext > h1{
+    padding: 20px 0;
+    font-family:'Joti One';
+    color:#fe6283;
+}
+
+
+/*Media queries for about page*/
+@media screen and (min-device-width: 770px) and (max-device-width: 1300px){
+    .about{
+        padding: 90px 100px 30px 100px;
+    }
+    .abouttext{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-device-width: 770px){
+    .about{
+        padding: 50px;
+    }
+    .abouttext{
+        margin: 0;
+        padding-top: 20px;
+        width: 100%;
+        background-color: #fbcace8e;
+    }
+    .aboutimg{
+        display: none;    
+    }
+    .aboutbg{
+        background: url('./images/icecream8nobg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 40px;
+    }
+}
+
+
+
+/*shop page*/
+.shopitems{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productsp{
+    width: 170px;
+    height: 240px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: transform .2s;
+    
+}
+
+.productsp:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.05) 
+}
+
+.icecreamsp{
+    background-image: url('./images/icecream2.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.wafflesp{
+    background-image: url('./images/waffle1.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.producttitlesp{
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productinfosp{
+    display: inline;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.568);
+
+}
+
+
+/*Media queries for shop page*/
+@media screen and (min-width: 1530px) and (max-width: 2600px){
+    .shopitems{
+        padding: 30px 70px;
+    }
+}
+
+
+/*Ice Cream & Waffle pages*/
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 50px 20px;
+    justify-content: center;
+    
+}
+
+.productinfo{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 40px 0px 20px 50px;
+}
+
+.productinfo > p{
+    padding: 10px 0px 15px 0px;
+    width: 100%;
+}
+
+.productinfo > h1{
+    font-family: 'Joti One';
+    color:#fe6283;
+}
+
+span{
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.product > img{
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.productinfo > form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+input[type="radio"]{
+    margin: 10px;
+}
+
+.radiobtns{
+    display: flex;
+    width: 100%;
+}
+
+.flavours, .type{
+    width: 50%;
+}
+
+.scoops{
+    width: 100%;
+    padding: 25px;
+}
+
+.scoops > select{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.addtocart{
+    padding-top: 30px;
+}
+
+.addtocart > button{
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color:#a6eeca;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: transform .2s;
+
+}
+
+.addtocart > button:hover{
+    transform: scale(1.05) 
+
+}
+
+
+/*Profile page*/
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+fieldset{
+    margin: 2vh;
+    padding: 10px;
+    width: 40%;
+    align-items: center;
+    border-radius: 7px;
+    border-color:#0000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+legend{
+    padding: 10px;
+    background-color:#a6eeca;
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+label{
+    margin: 15px;
+}
+
+fieldset > input{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.formbuttons{
+    text-align: right;
+}
+
+.formbuttons > button{
+    background-color:#a6eeca;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 7px 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:disabled{
+    background-color: rgb(222, 222, 222);
+    color: gray;
+    border-color: rgb(222, 222, 222);
+}
+
+button:disabled:hover{
+    cursor: context-menu;
+}
+
+input{
+    margin: 20px 5px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+
+/*Cart page*/
+.cart{
+    margin: 5px 20% 4% 20%;
+    padding: 5px 20px;
+}
+
+.cartitems{
+    border-bottom: 3px solid #a6eeca;
+}
+
+.cartproduct{
+    display: flex;
+    margin: 20px;
+
+}
+
+.cartimg{
+    border-radius: 20%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.cartinfo{
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    width: 80%;
+}
+
+.orderinfo{
+    width: 100%;
+}
+
+h2{
+    font-family: 'Joti One';
+    color:#fe6283;
+}
+
+.changeorder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.deleteorder{
+    text-align: center;
+}
+
+.deleteorder > svg{
+    height: 20px;
+    width: 20px;
+}
+
+.deleteorder > svg:hover{
+    cursor: pointer;
+}
+
+.editicon{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.editicon:hover{
+    cursor: pointer;
+}
+
+
+.itemsdevider{
+    border: 1px solid #a6eeca;
+}
+
+.carttotal{
+    padding: 30px;
+}
+
+.cartradio{
+    margin-bottom: 5px;
+}
+
+.cartradio > label{
+    margin-left: 10px;
+}
+
+.checkoutbtn{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color:#a6eeca;
+    border-radius: 25px;
+    padding: 15px 40px;
+    transition: transform .2s;
+}
+
+.checkoutbtn:hover{
+    transform: scale(1.05)
+}
