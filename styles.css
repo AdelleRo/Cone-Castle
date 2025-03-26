@@ -229,7 +229,9 @@ h3{
 
 
 /*shop page*/
-
+.shopmain{
+    height: auto;
+}
 
 .shopitems{
     padding: 30px;
@@ -293,6 +295,10 @@ h3{
 
 
 /*Ice Cream & Waffle pages*/
+.productmain{
+    height: auto;
+}
+
 .product{
     display: flex;
     flex-wrap: wrap;
@@ -306,6 +312,14 @@ h3{
 
 .wafflemobile{
     height: 0;
+}
+
+.icecreamsq{
+    height: 450px;
+}
+
+.icecreammobile{
+    height: 0px;
 }
 
 .productinfo{
@@ -334,7 +348,7 @@ span{
 .productinfo > form{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
 }
 
 input[type="radio"]{
@@ -362,6 +376,8 @@ input[type="radio"]{
 
 .addtocart{
     padding-top: 30px;
+    width: 100%;
+    text-align: center;
 }
 
 .addtocart > button{
@@ -378,15 +394,15 @@ input[type="radio"]{
 
 /*Media Queries for Item pages*/
 @media screen and (min-device-width: 1023px) and (max-device-width: 1300px){
-    .wafflesq{
+    .wafflesq, .icecreamsq{
         height:300px;
     }
 }
 @media screen and (max-device-width: 1000px){
-    .wafflesq{
+    .wafflesq, .icecreamsq{
         height:0;
     }
-    .wafflemobile{
+    .wafflemobile, .icecreammobile{
         height: 500px;
     }
 }
