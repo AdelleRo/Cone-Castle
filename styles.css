@@ -11,7 +11,7 @@ body{
 }
 
 main{
-    height: 90vh;
+    flex-grow: 1;
 }
 
 header{
@@ -39,6 +39,11 @@ nav{
     padding: 3px;
 }
 
+.mobilenav{
+    width: 0;
+    display:none;
+}
+
 .navopt:hover{
     background-color:#ffec99;
     border-radius: 10px;
@@ -50,6 +55,7 @@ footer{
     display: flex;
     justify-content: center;
     padding: 50px;
+
 }
 
 .social, .legal{
@@ -92,12 +98,19 @@ h3{
     .htext{
         font-size: 2rem;
     }
+    nav{
+        width: 0;
+    }
+    nav > a{
+        display: none;
+    }
+    .mobilenav{
+        width: 100%;
+        display: inline;
+    }
 }
 
 /*Home page*/
-.hpmain{
-    height: auto;
-}
 
 .featured{
     padding: 0 10%;
@@ -229,9 +242,6 @@ h3{
 
 
 /*shop page*/
-.shopmain{
-    height: auto;
-}
 
 .shopitems{
     padding: 30px;
@@ -295,9 +305,7 @@ h3{
 
 
 /*Ice Cream & Waffle pages*/
-.productmain{
-    height: auto;
-}
+
 
 .product{
     display: flex;
