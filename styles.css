@@ -10,6 +10,10 @@ body{
     background-color: #fdeec1;
 }
 
+main{
+    height: 90vh;
+}
+
 header{
     background-image: url('./images/icecreamdrip2.1.png');
     background-size: 110%;
@@ -52,11 +56,14 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 50px;
 }
 
 .social{
-    margin-left: 130px;
+    justify-self: center;
+}
+
+.footerlogo{
+    padding: 0 30px;
 }
 
 a{
@@ -76,16 +83,22 @@ h3{
     header{
         height: 200px;
     }
-
 }
 
 @media screen and (max-device-width: 770px){
     .ptext{
         font-size: 1.5rem;
     }
+    .htext{
+        font-size: 2rem;
+    }
 }
 
 /*Home page*/
+.hpmain{
+    height: auto;
+}
+
 .featured{
     padding: 0 10%;
     display: flex;
@@ -216,6 +229,8 @@ h3{
 
 
 /*shop page*/
+
+
 .shopitems{
     padding: 30px;
     text-align: center;
@@ -268,31 +283,37 @@ h3{
 
 
 /*Media queries for shop page*/
-@media screen and (min-width: 1530px) and (max-width: 2600px){
+@media screen and (max-width: 2600px){
     .shopitems{
-        padding: 30px 70px;
+        padding: 30px 70px 0 70px;
     }
+
 }
+
 
 
 /*Ice Cream & Waffle pages*/
 .product{
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 0px 50px 20px;
+    padding: 50px 20px;
     justify-content: center;
 }
 
+.wafflesq{
+    height: 500px;
+}
+
+.wafflemobile{
+    height: 0;
+}
+
 .productinfo{
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    padding: 40px 0px 20px 50px;
+    padding: 20px 50px;
 }
 
 .productinfo > p{
     padding: 10px 0px 15px 0px;
-    width: 100%;
 }
 
 .productinfo > h1{
@@ -355,6 +376,21 @@ input[type="radio"]{
     transform: scale(1.05);
 }
 
+/*Media Queries for Item pages*/
+@media screen and (min-device-width: 1023px) and (max-device-width: 1300px){
+    .wafflesq{
+        height:300px;
+    }
+}
+@media screen and (max-device-width: 1000px){
+    .wafflesq{
+        height:0;
+    }
+    .wafflemobile{
+        height: 500px;
+    }
+}
+
 
 /*Profile page*/
 form{
@@ -366,12 +402,11 @@ form{
 fieldset{
     margin: 2vh;
     padding: 10px;
-    width: 40%;
+    width: 50vw;
     align-items: center;
     border-radius: 7px;
     border-color:#0000;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
 }
 
 legend{
@@ -420,6 +455,13 @@ input{
     padding: 5px;
 }
 
+/*Media queries for profile page*/
+@media screen and (max-device-width: 520px) {
+    fieldset{
+        width: 70vw;
+        padding: 50px;
+    }
+}
 
 /*Cart page*/
 .cart{
@@ -466,7 +508,7 @@ h2{
     text-align: center;
 }
 
-.deleteorder > svg{
+.deleteicon{
     height: 20px;
     width: 20px;
 }
@@ -512,4 +554,15 @@ h2{
 
 .checkoutbtn:hover{
     transform: scale(1.05)
+}
+
+/*media queries for cart*/
+@media screen and (max-device-width: 766px){
+    .cart{
+        margin: 5px 10% 4% 10%;
+    }
+    .deleteicon, .editicon{
+        width: 30px;
+        height: 30px;
+    }
 }
