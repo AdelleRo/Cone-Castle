@@ -119,13 +119,20 @@ h3{
     }
     .mobilenav{
         width: 100%;
-        display:contents;
+        display: flex;
+        position: relative;
     }
     .mobilenavlogo{
-        display: inline;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .hamburgermenu{
-        text-align: right;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding-right: 10px;
     }
     #togglemenu{
         display: none;
@@ -137,14 +144,20 @@ h3{
     .mobilemenu{
         display: none;
         flex-direction: column;
-        background-color: #f0f0f0;
-        padding: 10px;
-        border: 1px solid #ccc;
+        background-color:#a6eeca;
+        border-radius: 20px;
+        padding: 20px;
+        position: absolute;
     }
     .mobilemenu a{
         text-decoration: none;
         color: #333;
         margin: 5px 0;
+        font-family: Joti One;
+    }
+    .mobilemenu a:hover{
+        background-color: rgba(255, 255, 255, 0);
+        color:#fe6283;
     }
     #togglemenu:checked + .hamburgericon + .mobilemenu{
         display:flex;
