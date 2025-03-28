@@ -44,6 +44,19 @@ nav{
     display:none;
 }
 
+/* .hamburgermenu{
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.hamburgermenu:active{
+    overflow: visible;
+} */
+
+
+
 .navopt:hover{
     background-color:#ffec99;
     border-radius: 10px;
@@ -106,7 +119,35 @@ h3{
     }
     .mobilenav{
         width: 100%;
+        display:contents;
+    }
+    .mobilenavlogo{
         display: inline;
+    }
+    .hamburgermenu{
+        text-align: right;
+    }
+    #togglemenu{
+        display: none;
+    }
+    .hamburgericon{
+        cursor: pointer;
+        display: inline-block;
+    }
+    .mobilemenu{
+        display: none;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    .mobilemenu a{
+        text-decoration: none;
+        color: #333;
+        margin: 5px 0;
+    }
+    #togglemenu:checked + .hamburgericon + .mobilemenu{
+        display:flex;
     }
 }
 
